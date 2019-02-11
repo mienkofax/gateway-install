@@ -1,0 +1,7 @@
+sudo: required
+dist: xenial
+before_install:
+  - sudo apt-get update
+script:
+  - sudo ./install_ubuntu.sh
+  - TEST_OUTPUT_FORMAT=tap; ./gateway/cmake-build/test/test-suite-gateway
