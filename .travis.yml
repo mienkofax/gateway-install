@@ -1,5 +1,6 @@
+compiler: gcc
 sudo: required
-dist: xenial
+dist: bionic
 before_install:
   - sudo apt-get update
 script:
