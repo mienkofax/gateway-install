@@ -53,7 +53,7 @@ install_gateway()
 	git submodule update
 	mkdir cmake-build
 	cd cmake-build
-	cmake ..
+	cmake -DENABLE_ZWAVE=OFF ..
 	make -j`nproc`
 	cd ..
 	cd ..
